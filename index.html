@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <div class="header">
+        <h1>Image Search Gallery - Mini 1</h1>
+        <div id="cover">
+            <form method="get" action="" onsubmit="return false;">
+              <div class="tb">
+                <div class="td">
+                  <input type="text" placeholder="Search" required id="search-input">
+                </div>
+                <div class="td" id="s-cover">
+                  <button type="submit">
+                    <div id="s-circle"></div>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+        </div>
+        <div class="hot-search">
+            <span class="hot-keyword">dog</span>
+            <span class="hot-keyword">cat</span>
+            <span class="hot-keyword">beautiful</span>
+            <span class="hot-keyword">natural</span>
+            <span class="hot-keyword">iphone</span>
+            <span class="hot-keyword">summer</span>
+            <span class="hot-keyword">computer</span>
+            <span class="hot-keyword">covid</span>
+            <span class="hot-keyword">family</span>
+        </div>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row" id="image-gallery">
+        <!-- Images will be inserted here by JavaScript -->
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

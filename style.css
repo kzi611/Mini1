@@ -1,0 +1,216 @@
+.body {
+    font-family: monospace;
+}
+h1{
+    color: #a67e4e;
+    font-family: monospace;
+}
+
+body {
+  background-color: #feeaea;
+}
+
+.tb {
+  display: table;
+  width: 100%;
+}
+
+.td {
+  display: table-cell;
+}
+
+input,
+button {
+  color: #fff;
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+#cover {
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  padding: 3px;
+  margin: -83px auto 0 auto;
+  background-color: #ff7575;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+  top: 28%;
+  left: 30%
+}
+
+form {
+  height: 80px;
+}
+
+input[type="text"],h1 {
+  width: 100%;
+  height: 70px;
+  font-size: 60px;
+  line-height: 1;
+}
+
+input[type="text"]::placeholder{
+  color: #e16868;
+}
+
+#s-cover {
+  width: 1px;
+  padding-left: 35px;
+}
+
+button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 96px;
+  cursor: pointer;
+}
+
+#s-circle {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+
+button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+
+button span:before,
+button span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before,
+#s-cover:hover button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Flex container setup */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-bottom: -8px;
+}
+
+/* Flex item configuration */
+.column {
+  flex-grow: 1;  /* Allows the column to grow to fill available space */
+  margin: 5px;
+  overflow: hidden;  /* Keeps the image within the bounds of the column */
+}
+
+/* Image configuration to fill its container */
+.column img {
+  width: 100%;  /* Makes the image fill the width of its container */
+  height: 100%; /* Makes the image fill the height of its container */
+  object-fit: cover;  /* Ensures the image covers the area without distortion */
+  border-radius: 20px;
+}
+
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*.hot-keyword*/
+.hot-search {
+  text-align: center;
+  margin-top: 110px;
+}
+
+.hot-keyword {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ffaeae;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hot-keyword:hover {
+    background-color: #ec2828;
+}
